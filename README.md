@@ -72,4 +72,4 @@ SoftUni JS Back-End Course Project <strong>"Movie Magic" Part 1</strong>
 38. Add Movie Model ✅
 38.1 Create Movie Schema ✅
 38.2 Create Movie Model ✅
-39. Refactor Movie Service
+39. Import file movies to database ✅
