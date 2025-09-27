@@ -1,7 +1,7 @@
 # movie-magic-part1
 SoftUni JS Back-End Course Project <strong>"Movie Magic" Part 1</strong>
 
-### Development Steps
+## Development Steps - WorkShop 1: Express and Templating
 
 ### Setup
 1. Initialize Project ✅
@@ -60,3 +60,12 @@ SoftUni JS Back-End Course Project <strong>"Movie Magic" Part 1</strong>
 33. Dynamic Page Title ✅
 34. Movie Raiting (temporary solution) ✅
 35. File Persistance -> Dynamic DB ✅
+
+
+## Development Steps - WorkShop 2: MongoDB Database
+
+### Setup Database
+36. Install mongoose -> "npm i mongoose" ✅
+37. Connect to DB
+
+### Refactor Movies to use mongoose
