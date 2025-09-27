@@ -69,3 +69,6 @@ SoftUni JS Back-End Course Project <strong>"Movie Magic" Part 1</strong>
 37. Connect to DB
 
 ### Refactor Movies to use mongoose
+38. Add Movie Model ✅
+38.1 Create Movie Schema ✅
+38.2 Create Movie Model ✅
