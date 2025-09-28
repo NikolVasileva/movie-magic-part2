@@ -20,7 +20,10 @@ movieController.post("/create", async(req, res) => {
 
 movieController.get("/:movieId/details", async(req, res) => {
     const movieId = req.params.movieId;
-    const movie = await movieService.getOne(movieId)
+    const movie = await movieService.getOne(movieId);
+
+    // const movieCasts = await castService.getAll({ includes: movie.casts });
+
 
     //TODO Prepare view data (temporary solution)
     const ratingViewData = '&#x2605;'.repeat(Math.trunc(movie.rating));
