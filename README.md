@@ -96,7 +96,7 @@ SoftUni JS Back-End Course Project <strong>"Movie Magic" Part 1</strong>
 ### Show Cast on Details (population)
 55. Get movie casts filtered ✅
 56. Show casts on details ✅
-57. Get movie casts using population
+57. Get movie casts using population ✅
 
 ### Bonuses
 58. Filter casts if they are already attached

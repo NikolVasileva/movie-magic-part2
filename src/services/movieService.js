@@ -1,44 +1,45 @@
-import Movie from "../models/Movie.js"
+import Movie from "../models/Movie.js";
 
 export default {
     getAll(filter = {}) {
-        let query = Movie.find()
+        let query = Movie.find();
         // const result = await Movie.find(filter).lean();
-        // const resultObj = result.map(movie => movie.toObject())
+        // const resultObj = result.map(movie => movie.toObject());
 
         if (filter.title) {
-            // query = query.filter(movie => movie.title.toLocaleLowerCase().includes(filter.title.toLocaleLowerCase()))
-            query = query.find({title: { $regex: filter.title, $options: "i" } })
+            // TODO Search by title, partial match, case insensitive
+            query = query.find({ title: { $regex: filter.title, $options: 'i' } });
         }
 
         if (filter.genre) {
-            // query = query.filter(movie => movie.genre.toLocaleLowerCase() === filter.genre.toLocaleLowerCase())
-            query = query.find({genre: { $regex: new RegExp(`^${filter.genre}$`), $options: "i" } })
+            // TODO Search by genre, exact match, case insensitive
+            query = query.find({ genre: { $regex: new RegExp(`^${filter.genre}$`), $options: 'i' } })
         }
 
         if (filter.year) {
-            // result = result.filter(movie => movie.year === filter.year)
-            // result = result.find({year: filter.year}) // mongodb variant
-            query = query.where("year").equals(filter.year) // mongoose variant
-
+            // TODO Search by year, exact match, case senstive
+            // result = result.find({ year: filter.year })
+            query = query.where('year').equals(filter.year);
         }
 
-        return query
+        return query;
     },
-
     getOne(movieId) {
-        // return Movie.findOne({id: movieId})
-        return Movie.findById(movieId)
+        // return Movie.findOne({_id: movieId});
+        // return Movie.findById(movieId).populate('casts');
+        return Movie.findById(movieId);
     },
-
+    getOneDetailed(movieId) {
+        return this.getOne(movieId).populate('casts');
+    },
     create(movieData) {
-        movieData.rating = Number(movieData.rating)
+        movieData.rating = Number(movieData.rating);
+
         // const movie = new Movie(movieData);
         // return movie.save();
 
-        return Movie.create(movieData)
+        return Movie.create(movieData);
     },
-
     async attach(movieId, castId) {
         // Add relation method #1
         // const movie = await Movie.findById(movieId);
