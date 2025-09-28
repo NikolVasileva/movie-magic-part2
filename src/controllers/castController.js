@@ -1,9 +1,9 @@
 import { Router } from "express"
 
-const castContreller = Router();
+const castController = Router();
 
-castContreller.ger("/", (res, req) => {
-    res.end()
+castController.get("/create", (req, res) => {
+    res.render("casts/create")
 })
 
-export default castContreller
+export default castController

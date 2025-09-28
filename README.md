@@ -80,7 +80,7 @@ SoftUni JS Back-End Course Project <strong>"Movie Magic" Part 1</strong>
 ### Add Cast
 43. Add Resources ✅
 44. Create Cast Controller ✅
-45. Create Cast Page
+45. Create Cast Page ✅
 46. Add Cast Model
 47. Create Cast Service
 48. Create Cast Functionallity
