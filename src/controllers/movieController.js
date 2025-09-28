@@ -22,13 +22,13 @@ movieController.get("/:movieId/details", async(req, res) => {
     const movieId = req.params.movieId;
     const movie = await movieService.getOne(movieId);
 
-    // const movieCasts = await castService.getAll({ includes: movie.casts });
+    const movieCasts = await castService.getAll({ includes: movie.casts });
 
 
     //TODO Prepare view data (temporary solution)
     const ratingViewData = '&#x2605;'.repeat(Math.trunc(movie.rating));
 
-    res.render("details", {movie, raiting: ratingViewData, pageTitle: "Movie Details"})
+    res.render("details", {movie, raiting: ratingViewData, pageTitle: "Movie Details", casts: movieCasts})
 })
 
 movieController.get("/search", async (req, res) => {
