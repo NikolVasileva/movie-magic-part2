@@ -88,7 +88,7 @@ SoftUni JS Back-End Course Project <strong>"Movie Magic" Part 1</strong>
 ### Attach Cast to Movie (relations)
 49. Add attach cast button ✅
 50. Add attach cast page ✅
-51. Add dynamic data to cast page
+51. Add dynamic data to cast page ✅
 52. Show cast list in attach select
 53. Add relation between cast and movie
 54. Attach cast functionallity
