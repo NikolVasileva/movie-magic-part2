@@ -99,4 +99,4 @@ SoftUni JS Back-End Course Project <strong>"Movie Magic" Part 1</strong>
 57. Get movie casts using population ✅
 
 ### Bonuses
-58. Filter casts if they are already attached
+58. Filter casts if they are already attached ✅

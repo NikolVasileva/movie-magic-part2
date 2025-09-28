@@ -12,6 +12,7 @@ export default {
         if (filter.excludes) {
             query = query.nin('_id', filter.excludes);
         }
+        
 
         return query;
     },
