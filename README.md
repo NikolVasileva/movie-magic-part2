@@ -75,3 +75,4 @@ SoftUni JS Back-End Course Project <strong>"Movie Magic" Part 1</strong>
 39. Import file movies to database ✅
 40. Fix own properties handlebars problem with lean method ✅
 41. General fix for own properties problem ✅
+42. Refactor Search field ✅
