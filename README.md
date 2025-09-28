@@ -76,3 +76,13 @@ SoftUni JS Back-End Course Project <strong>"Movie Magic" Part 1</strong>
 40. Fix own properties handlebars problem with lean method ✅
 41. General fix for own properties problem ✅
 42. Refactor Search field ✅
+
+### Add Cast
+43. Add Resources ✅
+44. Add Cast Model
+45. Create Cast Service
+46. Create Cast Controller
+
+### Attach Cast to Movie
+
+### Show Cast on Details
