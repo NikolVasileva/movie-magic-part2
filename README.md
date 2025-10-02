@@ -1,5 +1,5 @@
-# movie-magic-part1
-SoftUni JS Back-End Course Project <strong>"Movie Magic"</strong>
+# movie-magic-part2
+SoftUni JS Back-End Course Project <strong>"Movie Magic" Part 2</strong>
 
 ## Development Steps - WorkShop 1: Express and Templating
 
